@@ -86,11 +86,7 @@
             // Retrieve the balance from local storage
             var currentBalance = parseFloat(localStorage.getItem('balance'));
 
-            // Check if there are sufficient funds
-            if (currentBalance > amount) {
-                alert('Insufficient funds.');
-                return;
-            }
+     
 
             // Deduct the amount from the balance
             currentBalance -= amount;
