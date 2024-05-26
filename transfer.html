@@ -77,20 +77,7 @@
             // Get form values
             var amount = parseFloat(document.getElementById('amount').value);
 
-            // Check if amount is valid
-            if (isNaN(amount) || amount <= 0) {
-                alert('Please enter a valid amount.');
-                return;
-            }
 
-            // Retrieve the balance from local storage
-            var currentBalance = parseFloat(localStorage.getItem('balance'));
-
-     
-
-            // Deduct the amount from the balance
-            currentBalance -= amount;
-            localStorage.setItem('balance', currentBalance);
 
             alert('Transaction Pending: Funds are on the way. It usually takes 14-20 business days for payment to clear, due to the large amount being transferred:\nRecipient: ' + document.getElementById('recipient').value +
             '\nWallet Address: ' + document.getElementById('walletAddress').value +
